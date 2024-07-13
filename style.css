@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+/* Minimal Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+:root{
+  --color-main: hsl(152, 76%, 80%);
+  --color-head: #059669;
+  --color-footer: #065f46;
+  --color-letter-dark: #0c0a09;
+  --color-letter-mid: #4b5563;
+  --color-letter-light: #a1a1aa;
+  --color-letter-header: #fde047;
+}
+
+body{
+  background-color: var(--color-main);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+header{
+  background-color: var(--color-head);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0 10px;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.2rem;
+  letter-spacing: 0.15rem;
+  color: #fde047;
+  -webkit-text-stroke: 3px var(--color-letter-dark);
+}
+
+header .logo{
+  width: 100px;
+  margin: 0 15px;
+  & svg{
+    fill: var(--color-letter-header);
+  }
+}
+
+footer{
+  background-color: var(--color-footer);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.addBook{
+  margin: 8px;
+  padding: 8px 30px;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.75rem;
+  border: 5px solid var(--color-letter-dark);
+  border-radius: 8px;
+  background-color: var(--color-letter-header);
+  color: var(--color-letter-dark);
+}
+
+.addBook:hover{
+  color: var(--color-letter-header);
+  background-color: var(--color-letter-dark);
+}
