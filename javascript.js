@@ -16,6 +16,10 @@ function addBookToLibrary(book){
     myLibrary.push(book);
 }
 
+function addBookToDom(book){
+    
+}
+
 theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, true);
 console.log(theHobbit.info());
 console.log(Object.getPrototypeOf(theHobbit));
