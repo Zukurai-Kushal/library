@@ -85,6 +85,7 @@ main{
   border: 5px solid var(--color-letter-dark);
   border-radius: 8px;
   min-height: 250px;
+  min-width: 5.5rem; /* Fixes width issue for Firefox and Safari */
   color: var(--color-letter-dark);
 }
 
