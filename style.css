@@ -227,6 +227,25 @@ footer{
   align-items: center;
   justify-content: center;
   padding: 15px;
+  position: relative;
+}
+
+.background-credit{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 20px;
+  color: var(--color-main);
+}
+
+.background-credit a{
+  font-weight: 700;
+  color: var(--color-main);
+  text-decoration: none;
+}
+
+.background-credit a:hover{
+  color: var(--color-letter-dark);
 }
 
 #add-book-button{
