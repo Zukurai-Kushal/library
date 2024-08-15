@@ -269,7 +269,8 @@ footer{
 #new-book-dialog{
   width: min(80%, 450px);
   background-color: var(--color-letter-header);
-  border: 3px solid var(--color-letter-dark);
+  border: none;
+  border-left: 10px dotted var(--color-letter-dark);
   border-radius: 4px;
   margin: auto;
   font-family: "Anton SC", sans-serif;
